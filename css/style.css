@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    animation: bodyshake 3s infinite;
+}
+.sky{
+    height: 342px;
+    width: 1280px;
+    background-image: url(../img/sky.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -10px; 
+}
+.tree{
+    width: 2700px;
+    height: 600px;
+    position: absolute;
+    bottom: -97px;;
+    animation: treesinmotion linear 3s infinite;
+}
+.road{
+    background-image: url(../img/track.png);
+    height: 266px;
+    width: 2581px;
+    position: absolute;
+    bottom: -427px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: ontheway linear 1s infinite;
+}
+
+.carbody{
+    height: 155px;
+    width: auto;
+    position: relative;
+    left: 156px;
+    top: 333px;
+    animation: cardancing  2s infinite;
+}
+
+.tyre1{
+    position: relative;
+    height: 90px;
+    left: -322px;
+    top: 334px;
+    animation: tyrestart linear 0.50s infinite;
+}
+.tyre2{
+    position: relative;
+    top: 341px;
+    right: 139px;
+    height: 88px;
+    animation: tyrestart linear 0.50s infinite;
+}
+
+@keyframes tyrestart {
+    0%{transform: rotate(0deg);} 
+    100%{transform: rotate(500deg);}
+}
+@keyframes treesinmotion {
+   100%{transform: translateX(-200vh);}
+}
+@keyframes ontheway{
+   100%{transform: translateX(-200vh);}
+}
+@keyframes cardancing {
+    0%{transform: translateY(-3px);}
+    50%{transform: translateY(3px);}
+    100%{transform: translateY(-3px);}
+}
+@keyframes bodyshake {
+    50%{transform: translateY(12px);}
+    100%{transform: translateY(-12px);}
+}
