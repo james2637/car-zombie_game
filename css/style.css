@@ -7,7 +7,6 @@ body{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    animation: bodyshake 3s infinite;
 }
 .sky{
     height: 342px;
@@ -30,10 +29,10 @@ body{
     height: 266px;
     width: 2581px;
     position: absolute;
-    bottom: -427px;
+    bottom: 68px;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: ontheway linear 1s infinite;
+    animation: ontheway linear 1s infinite ;
 }
 
 .carbody{
@@ -74,8 +73,4 @@ body{
     0%{transform: translateY(-3px);}
     50%{transform: translateY(3px);}
     100%{transform: translateY(-3px);}
-}
-@keyframes bodyshake {
-    50%{transform: translateY(12px);}
-    100%{transform: translateY(-12px);}
 }
