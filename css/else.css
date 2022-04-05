@@ -1,0 +1,30 @@
+.information{
+ display: flex;
+ background-color: rgb(0, 0, 0);
+ height: 37px;
+ justify-content: space-around;
+ align-items: center;
+}
+p{
+    font-family: cursive;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f, 0 0 1em #f0f, 0 0 1.2em #f0f;
+    color: #fff;
+}
+
+p a{
+    color: rgb(230, 26, 230);
+    text-decoration: none;
+}
+
+.credits{
+    position: absolute;
+    bottom: 3px;
+    left: 13px;
+    background-color: rgb(131, 4, 163);
+    padding: 0px 4px;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
