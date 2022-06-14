@@ -8,35 +8,15 @@ body{
     height: 100%;
     overflow: hidden;
 }
-.sky{
-    height: 350px;
-    width: 1280px;
-    background-image: url(../img/sky.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 37px; 
-}
-.tree{
-    width: 2700px;
-    height: 620px;
-    position: absolute;
-    bottom: -109px;;
-    animation: treesinmotion linear 3s infinite;
-}
-.road{
-    background-image: url(../img/track.png);
-    height: 260px;
-    width: 2591px;
-    position: absolute;
-    bottom: 10px;
-    background-size: cover;
-    background-repeat: no-repeat;
+
+.background{
+    height: 625px;
+    width: 2583px;
     animation: ontheway linear 1s infinite ;
 }
 
 .carbody{
-    height: 155px;
+    height: 133px;
     width: auto;
     position: absolute;
     left: 156px;
@@ -46,25 +26,30 @@ body{
 
 .tyre1{
     position: relative;
-    height: 90px;
-    left: 229px;
-    top: 498px;
+    bottom: 141px;
+    height: 72px;
+    left: 220px;
     animation: tyrestart linear 0.50s infinite;
 }
 .tyre2{
     position: relative;
-    top: 505px;
-    right: -412px;
-    height: 89px;
+    bottom: 136px;
+    right: -381px;
+    height: 70px;
     animation: tyrestart linear 0.50s infinite;
+}
+
+.obstacle{
+    position: absolute;
+    top: 475px;
+    right: -280px;
+    height: 110px;
+    animation: obstacleAni 1s infinite;
 }
 
 @keyframes tyrestart {
     0%{transform: rotate(0deg);} 
     100%{transform: rotate(500deg);}
-}
-@keyframes treesinmotion {
-   100%{transform: translateX(-200vh);}
 }
 @keyframes ontheway{
    100%{transform: translateX(-200vh);}
@@ -73,6 +58,10 @@ body{
     0%{transform: translateY(-3px);}
     50%{transform: translateY(3px);}
     100%{transform: translateY(-3px);}
+}
+@keyframes obstacleAni{
+    0%{transform: translateX(1560px);}
+    100%{transform: translateX(-1560px);}
 }
 
 .jumpcar{
