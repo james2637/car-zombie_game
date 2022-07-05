@@ -11,40 +11,49 @@ body{
 
 .background{
     height: 625px;
-    width: 2583px;
+    width: 2650px;
     animation: ontheway linear 1s infinite ;
 }
 
 .carbody{
-    height: 133px;
+    height: 120px;
     width: auto;
     position: absolute;
     left: 156px;
-    top: 470px;
-    animation: cardancing  2s infinite;
+    top: 524px;
+    /* animation: cardancing  2s infinite; */
 }
+
+/* .carbody2{
+    height: 107px;
+    width: auto;
+    position: absolute;
+    left: 188px;
+    top: 540px;
+    animation: cardancing  2s infinite;
+} */
 
 .tyre1{
     position: relative;
-    bottom: 141px;
-    height: 72px;
-    left: 220px;
+    bottom: 94px;
+    height: 65px;
+    left: 214px;
     animation: tyrestart linear 0.50s infinite;
 }
 .tyre2{
     position: relative;
-    bottom: 136px;
-    right: -381px;
-    height: 70px;
+    bottom: 88px;
+    right: -357px;
+    height: 65px;
     animation: tyrestart linear 0.50s infinite;
 }
 
 .obstacle{
     position: absolute;
-    top: 475px;
-    right: -280px;
+    top: 540px;
+    left: 1279px;;
     height: 110px;
-    animation: obstacleAni 1s infinite;
+    animation: obstacleAni 1s ease-in infinite;
 }
 
 @keyframes tyrestart {
@@ -60,30 +69,33 @@ body{
     100%{transform: translateY(-3px);}
 }
 @keyframes obstacleAni{
-    0%{transform: translateX(1560px);}
-    100%{transform: translateX(-1560px);}
+    0%{left: 1279px;}
+    100%{left: -70px;}
 }
 
 .jumpcar{
     animation-name: carjump;
-    animation-duration: 0.5s;
+    animation-duration: 0.55s;
     animation-timing-function: ease-in-out;
     animation-direction: alternate-reverse;
 }
 @keyframes carjump {
     0%{
-        transform: translateY(0px);
+        top: 524px;
     }
-    50%{
-        transform: translateY(-150px);
+    30%{
+        top: 367px;
+    }
+    60%{
+        top: 367px;
     }
     100%{
-        transform: translateY(0px);
+        top: 524px;
     }
 } 
 .jumptyre{
     animation-name: tyrejump;
-    animation-duration: 0.5s;
+    animation-duration: 0.55s;
     animation-timing-function: ease-in-out;
     animation-direction: alternate-reverse;
 }
@@ -91,7 +103,10 @@ body{
     0%{
         transform: translateY(0px);
     }
-    50%{
+    30%{
+        transform: translateY(-150px);
+    }
+    60%{
         transform: translateY(-150px);
     }
     100%{
