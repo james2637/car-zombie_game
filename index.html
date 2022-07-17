@@ -17,35 +17,30 @@
 <body>
 
     <div class="information">
-        <p>Your score : </p>
-        <p><a href="#">How to play</a></p>
-        <p>High score : </p>
+        <p class="score">Your score : </p>
+        <h3 class="font-effect-fire-animation">Created by Rabi and Harry</h3>
+        <p class="hgscore">High score : </p>
     </div>
-    
-    
-    <img src="img/background.jpg" class="background" alt="">
+
+
+    <img src="img/background.jpg" class="background , background-ani" alt="">
     <div class="gameover">
         <p class="over">Game over</p>
         <span>
-         <p>Your score : </p>
-         <button>Play again</button>
+            <p class="Gm-score">Your score : </p>
+            <button onClick="window.location.reload();">Play again</button>
         </span>
     </div>
 
-    <!-- <div class="btn">
-        <span>Car change</span>
-        <input type ="checkbox" onclick="changecar()">
-    </div> -->
-    
-    <img class="carbody" id="carcng" src="img/car-body1.png" alt="">
-         <div class="tyre">
-             <img class="tyre1" src="img/car-tire-png-458.png" alt="">
-             <img class="tyre2" src="img/car-tire-png-458.png" alt="">
-         </div>
-    
-    <img src="img/zombie-48831.png" alt="" class="obstacle">
 
-        <p class="credits">Created by Rabi and Harry</p>
+    <img class="carbody" id="carcng" src="img/car-body1.png" alt="">
+    <div class="tyre">
+        <img src="img/car-tire-png-458.png" class="tyre1 , tyre1-ani" alt="">
+        <img src="img/car-tire-png-458.png" class="tyre2 , tyre2-ani" alt="">
+    </div>
+
+    <img src="img/zombie-48831.png" alt="" class="obstacle , obstacle-ani">
+
 </body>
 
 </html>

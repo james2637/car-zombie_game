@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation");
+
 .information{
  display: flex;
  background-color: rgb(0, 0, 0);
@@ -7,16 +9,15 @@
 }
 .information p{
     font-family: cursive;
-    font-size: 1.4em;
+    font-size: 23px;
     font-weight: bold;
     text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f, 0 0 1em #f0f, 0 0 1.2em #f0f;
     color: #fff;
 }
-
-p a{
-    color: rgb(230, 26, 230);
-    text-decoration: none;
-}
+ h3{
+    font-size: 26px;
+    font-weight: bold;
+ }
 
 /* .btn{
     position: absolute;
@@ -52,30 +53,7 @@ input[type = checkbox]:before{
 input:checked[type = checkbox]:before{
     left: 24px;
 }
-.btn span{
-    border: 1px solid white;
-    padding: 7px 10px 30px;
-    position: relative;
-    top: -30px;
-    right: -74px;
-    font-size: large;
-    color: white;
-    font-style: oblique;
-    border-radius: 20px;
-    background: #2623e29e;
-} */
-.credits{
-    position: absolute;
-    bottom: 3px;
-    left: 13px;
-    padding: 0px 4px;
-    font-size: 1.2em;
-    font-family: cursive;
-    font-size: 1.4em;
-    font-weight: bold;
-    text-shadow: 0 -0.05em 0.2em #fff, 0.01em -0.02em 0.15em #fe0, 0.01em -0.05em 0.15em #fc0, 0.02em -0.15em 0.2em #f90, 0.04em -0.2em 0.3em #f70, 0.05em -0.25em 0.4em #f70, 0.06em -0.2em 0.9em #f50, 0.1em -0.1em 1em #f40;
-    color: #ffe;
-}
+*/
 
 .gameover{
     height: 160px;
@@ -118,3 +96,4 @@ input:checked[type = checkbox]:before{
     background-color: rgb(149, 248, 50);
     padding: 3px;
 }
+

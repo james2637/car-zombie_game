@@ -12,48 +12,52 @@ body{
 .background{
     height: 625px;
     width: 2650px;
+}
+.background-ani{
     animation: ontheway linear 1s infinite ;
 }
 
 .carbody{
-    height: 120px;
+    height: 93px;
     width: auto;
     position: absolute;
-    left: 156px;
-    top: 524px;
-    /* animation: cardancing  2s infinite; */
+    right: 769px;
+    top: 534px;
 }
-
-/* .carbody2{
-    height: 107px;
-    width: auto;
-    position: absolute;
-    left: 188px;
-    top: 540px;
-    animation: cardancing  2s infinite;
-} */
 
 .tyre1{
     position: relative;
-    bottom: 94px;
-    height: 65px;
+    bottom: 96px;
+    height: 58px;
     left: 214px;
+}
+.tyre1-ani{
     animation: tyrestart linear 0.50s infinite;
 }
 .tyre2{
     position: relative;
-    bottom: 88px;
-    right: -357px;
-    height: 65px;
+    bottom: 93px;
+    right: -352px;
+    height: 56px;
+}
+.tyre2-ani{
     animation: tyrestart linear 0.50s infinite;
 }
 
 .obstacle{
     position: absolute;
-    top: 540px;
-    left: 1279px;;
+    top: 524px;
     height: 110px;
-    animation: obstacleAni 1s ease-in infinite;
+    right: -63px;
+}
+.obstacle-ani{
+    animation-name: obstacleAni;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.obstaclestop{
+    animation-play-state: paused;
 }
 
 @keyframes tyrestart {
@@ -63,25 +67,23 @@ body{
 @keyframes ontheway{
    100%{transform: translateX(-200vh);}
 }
-@keyframes cardancing {
-    0%{transform: translateY(-3px);}
-    50%{transform: translateY(3px);}
-    100%{transform: translateY(-3px);}
-}
 @keyframes obstacleAni{
-    0%{left: 1279px;}
-    100%{left: -70px;}
+    0%{right: -63px;}
+    100%{right: 1730px;}
 }
 
 .jumpcar{
     animation-name: carjump;
-    animation-duration: 0.55s;
+    animation-duration: .50s;
     animation-timing-function: ease-in-out;
     animation-direction: alternate-reverse;
 }
+.jumpstop{
+    animation-play-state: paused;
+}
 @keyframes carjump {
     0%{
-        top: 524px;
+        top: 534px;
     }
     30%{
         top: 367px;
@@ -90,12 +92,12 @@ body{
         top: 367px;
     }
     100%{
-        top: 524px;
+        top: 534px;
     }
 } 
 .jumptyre{
     animation-name: tyrejump;
-    animation-duration: 0.55s;
+    animation-duration: .50s;
     animation-timing-function: ease-in-out;
     animation-direction: alternate-reverse;
 }
@@ -104,10 +106,10 @@ body{
         transform: translateY(0px);
     }
     30%{
-        transform: translateY(-150px);
+        transform: translateY(-170px);
     }
     60%{
-        transform: translateY(-150px);
+        transform: translateY(-170px);
     }
     100%{
         transform: translateY(0px);
